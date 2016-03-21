@@ -1,0 +1,36 @@
+﻿生成启动时间为 2015/11/13 16:16:05。
+     1>项目“H:\my project\SharedWorld1.1\SharedWorld1.1\SharedWorld1.1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\SharedWorld1.1.res" SharedWorld1.1.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\my project\SharedWorld1.1\Debug\SharedWorld1.1.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"H:\my project\SharedWorld1.1\Debug\SharedWorld1.1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\my project\SharedWorld1.1\Debug\SharedWorld1.1.lib" /MACHINE:X86 Debug\SharedWorld1.1.res
+         Debug\Client.obj
+         Debug\Exception.obj
+         Debug\Idea.obj
+         Debug\JInStream.obj
+         Debug\JOutStream.obj
+         Debug\JUtil.obj
+         Debug\Logging.obj
+         Debug\LoginDlg.obj
+         Debug\LogStream.obj
+         Debug\MD5.obj
+         Debug\MyButton.obj
+         Debug\MyEdit.obj
+         Debug\RegisterDlg.obj
+         Debug\SharedSession.obj
+         Debug\SharedWorld1.1.obj
+         Debug\SharedWorld1.1Dlg.obj
+         Debug\Socket.obj
+         Debug\stdafx.obj
+         Debug\StringUtil.obj
+         Debug\Systemconfig.obj
+         Debug\Timestamp.obj
+         Debug\TransactionManager.obj
+         Debug\UserLogin.obj
+         Debug\UserRegister.obj
+         SharedWorld1.1.vcxproj -> H:\my project\SharedWorld1.1\Debug\SharedWorld1.1.exe
+     1>已完成生成项目“H:\my project\SharedWorld1.1\SharedWorld1.1\SharedWorld1.1.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.76
