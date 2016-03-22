@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B8DC4FF-A54B-45B5-B18A-BDDFC69D53D9}</ProjectGuid>
+    <RootNamespace>SharedWorld11</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharSetConvert.h" />
+    <ClInclude Include="ChatDlg.h" />
+    <ClInclude Include="DownLoadFile.h" />
+    <ClInclude Include="DownLoadFileThread.h" />
+    <ClInclude Include="GetResource.h" />
+    <ClInclude Include="SendChatContent.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="ServerThread.h" />
+    <ClInclude Include="SharedPack.h" />
+    <ClInclude Include="SharedServerSession.h" />
+    <ClInclude Include="SharedThread.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Idea.h" />
+    <ClInclude Include="JInStream.h" />
+    <ClInclude Include="JOutStream.h" />
+    <ClInclude Include="JThread.h" />
+    <ClInclude Include="JUtil.h" />
+    <ClInclude Include="Logging.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="LogStream.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="MyButton.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="RegisterDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SharedSession.h" />
+    <ClInclude Include="SharedWorld1.1.h" />
+    <ClInclude Include="SharedWorld1.1Dlg.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringUtil.h" />
+    <ClInclude Include="SystemConfig.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Timestamp.h" />
+    <ClInclude Include="Transaction.h" />
+    <ClInclude Include="TransactionManager.h" />
+    <ClInclude Include="UpLoadFile.h" />
+    <ClInclude Include="UpLoadFileThread.h" />
+    <ClInclude Include="UserLogin.h" />
+    <ClInclude Include="UserRegister.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChatDlg.cpp" />
+    <ClCompile Include="DownLoadFile.cpp" />
+    <ClCompile Include="DownLoadFileThread.cpp" />
+    <ClCompile Include="GetResource.cpp" />
+    <ClCompile Include="SendChatContent.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="ServerThread.cpp" />
+    <ClCompile Include="SharedServerSession.cpp" />
+    <ClCompile Include="SharedThread.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Idea.cpp" />
+    <ClCompile Include="JInStream.cpp" />
+    <ClCompile Include="JOutStream.cpp" />
+    <ClCompile Include="JThread.cpp" />
+    <ClCompile Include="JUtil.cpp" />
+    <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="LogStream.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="MyButton.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="RegisterDlg.cpp" />
+    <ClCompile Include="SharedSession.cpp" />
+    <ClCompile Include="SharedWorld1.1.cpp" />
+    <ClCompile Include="SharedWorld1.1Dlg.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringUtil.cpp" />
+    <ClCompile Include="Systemconfig.cpp" />
+    <ClCompile Include="Timestamp.cpp" />
+    <ClCompile Include="TransactionManager.cpp" />
+    <ClCompile Include="UpLoadFile.cpp" />
+    <ClCompile Include="UpLoadFileThread.cpp" />
+    <ClCompile Include="UserLogin.cpp" />
+    <ClCompile Include="UserRegister.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SharedWorld1.1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SharedWorld11.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\Honeycomb1.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\login.ico" />
+    <Image Include="res\QQ头像桌面图标下载10.ico" />
+    <Image Include="res\QQ头像桌面图标下载11.ico" />
+    <Image Include="res\QQ头像桌面图标下载12.ico" />
+    <Image Include="res\QQ头像桌面图标下载13.ico" />
+    <Image Include="res\QQ头像桌面图标下载14.ico" />
+    <Image Include="res\QQ头像桌面图标下载15.ico" />
+    <Image Include="res\QQ头像桌面图标下载16.ico" />
+    <Image Include="res\QQ头像桌面图标下载17.ico" />
+    <Image Include="res\QQ头像桌面图标下载18.ico" />
+    <Image Include="res\QQ头像桌面图标下载19.ico" />
+    <Image Include="res\QQ头像桌面图标下载2.ico" />
+    <Image Include="res\QQ头像桌面图标下载20.ico" />
+    <Image Include="res\QQ头像桌面图标下载21.ico" />
+    <Image Include="res\QQ头像桌面图标下载22.ico" />
+    <Image Include="res\QQ头像桌面图标下载23.ico" />
+    <Image Include="res\QQ头像桌面图标下载24.ico" />
+    <Image Include="res\QQ头像桌面图标下载3.ico" />
+    <Image Include="res\QQ头像桌面图标下载4.ico" />
+    <Image Include="res\QQ头像桌面图标下载5.ico" />
+    <Image Include="res\QQ头像桌面图标下载6.ico" />
+    <Image Include="res\QQ头像桌面图标下载7.ico" />
+    <Image Include="res\QQ头像桌面图标下载8.ico" />
+    <Image Include="res\QQ头像桌面图标下载9.ico" />
+    <Image Include="res\Seagreen.ico" />
+    <Image Include="res\SharedWorld1.1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SharedWorld1.1.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
