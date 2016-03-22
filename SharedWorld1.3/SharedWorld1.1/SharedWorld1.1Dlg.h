@@ -3,6 +3,7 @@
 //
 
 #pragma once
+
 #include "afxwin.h"
 #include "afxcmn.h"
 #include "ServerThread.h"
@@ -10,6 +11,7 @@
 #include "ChatDlg.h"
 #include "afxbutton.h"
 #include "MyButton.h"
+#include "ClientChatDlg.h"
 #include <map>
 
 using namespace std;
@@ -38,17 +40,17 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-	
 	afx_msg LRESULT OnNcHitTest(CPoint point);
 	
 	void setAccount(CString account);
 	void InitUserList();
 	void ShowFileTree();
 private:
-
+	
 	CListCtrl m_userlist;
 	ServerThread* st;
-	map<CString, CChatDlg*> chatDlgs;
+	std::map<CString, CChatDlg*> chatDlgs;
+	std::map<CString, CClientChatDlg*> clientChatDlgs;
 	std::vector<CString> files;
 	//CChatDlg chatDlg;
 	

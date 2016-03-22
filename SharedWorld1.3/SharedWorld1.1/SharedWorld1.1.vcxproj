@@ -103,6 +103,7 @@
   <ItemGroup>
     <ClInclude Include="CharSetConvert.h" />
     <ClInclude Include="ChatDlg.h" />
+    <ClInclude Include="ClientChatDlg.h" />
     <ClInclude Include="DownLoadFile.h" />
     <ClInclude Include="DownLoadFileThread.h" />
     <ClInclude Include="GetResource.h" />
@@ -146,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChatDlg.cpp" />
+    <ClCompile Include="ClientChatDlg.cpp" />
     <ClCompile Include="DownLoadFile.cpp" />
     <ClCompile Include="DownLoadFileThread.cpp" />
     <ClCompile Include="GetResource.cpp" />

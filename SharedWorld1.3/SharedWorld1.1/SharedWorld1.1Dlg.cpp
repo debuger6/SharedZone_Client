@@ -501,6 +501,26 @@ void CSharedWorld11Dlg::OnLvnItemchangedList1(NMHDR *pNMHDR, LRESULT *pResult)
 {
 	LPNMLISTVIEW pNMLV = reinterpret_cast<LPNMLISTVIEW>(pNMHDR);
 	// TODO:  在此添加控件通知处理程序代码
+	NM_LISTVIEW* pNMListView = (NM_LISTVIEW*)pNMHDR;
+	int nItem = pNMListView->iItem;
+	if (nItem >= 0 && nItem < m_userlist.GetItemCount())
+	{
+		username = m_userlist.GetItemText(nItem, 0);
+		map<CString, CClientChatDlg*>::iterator itDlg;
+		if ((itDlg = clientChatDlgs.find(username)) == clientChatDlgs.end())
+		{
+			
+			CClientChatDlg* cchatDlg = new CClientChatDlg();
+			cchatDlg->Create(IDD_CLIENTCHAT_DIALOG);
+			cchatDlg->SetPeerName(username);
+			clientChatDlgs.insert(make_pair(username, cchatDlg));
+			cchatDlg->ShowWindow(SW_SHOW);
+		}
+		else
+		{
+			itDlg->second->ShowWindow(SW_SHOW);
+		}
+	}
 	*pResult = 0;
 }
 

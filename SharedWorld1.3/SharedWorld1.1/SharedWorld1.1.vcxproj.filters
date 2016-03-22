@@ -144,6 +144,9 @@
     <ClInclude Include="UpLoadFileThread.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ClientChatDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SharedWorld1.1.cpp">
@@ -252,6 +255,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="UpLoadFileThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientChatDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
