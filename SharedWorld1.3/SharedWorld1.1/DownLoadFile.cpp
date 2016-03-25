@@ -3,6 +3,7 @@
 #include "CharSetConvert.h"
 #include "Logging.h"
 #include "JUtil.h"
+#include "IsCoverDlg.h"
 #define MAX_SIZE 65536
 
 using namespace PUBLIC;
@@ -32,7 +33,17 @@ void DownLoadFile::Execute(SharedSession& session)
 	jos << session.GetAttribute("username");
 	jos << session.GetAttribute("filepath");
 	string savePath = session.GetAttribute("savepath");
-	
+
+	//判断文件是否存在
+	if (PathFileExists(savePath.c_str()))
+	{
+		CIsCoverDlg isCoverDlg;
+		isCoverDlg.DoModal();
+		if (isCoverDlg.GetIsCover())
+			DeleteFile(savePath.c_str());		
+		else
+			return;
+	}
 	
 	// 包头len
 	size_t tailPos = jos.Length();
@@ -70,6 +81,5 @@ void DownLoadFile::Execute(SharedSession& session)
 		session.Recv2();
 		content = string(session.GetBuffer() + sizeof uint32, session.GetLen_());
 	}
-	fclose(fp);
-	delete &session;		
+	fclose(fp);	
 }

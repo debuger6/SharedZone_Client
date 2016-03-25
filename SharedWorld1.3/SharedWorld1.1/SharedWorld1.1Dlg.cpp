@@ -122,7 +122,11 @@ BOOL CSharedWorld11Dlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
-	
+
+	//CProgressCtrl *pProgCtrl = (CProgressCtrl*)GetDlgItem(IDC_PROGRESS1);
+	//pProgCtrl->SetRange(0, 200);//设置进度条范围  
+	//pProgCtrl->SetWindowPos(NULL, 5,5,5,5, 0);
+
 	GetDlgItem(IDC_BUTTON_MSG)->ModifyStyle(0, BS_OWNERDRAW, 0);
 	m_message_btn.Attach(IDC_BUTTON_MSG, this);
 	m_message_btn.SetDownColor(RGB(227, 222, 193));
@@ -438,6 +442,8 @@ void CSharedWorld11Dlg::OnBnClickedButtonClose()
 void CSharedWorld11Dlg::OnBnClickedButtonSend()
 {
 	// TODO:  在此添加控件通知处理程序代码
+	
+	
 	CString sendContent;
 	m_sendpanel_edit.GetWindowText(sendContent);
 	if (sendContent.GetLength() > 0)
@@ -501,7 +507,7 @@ void CSharedWorld11Dlg::OnLvnItemchangedList1(NMHDR *pNMHDR, LRESULT *pResult)
 {
 	LPNMLISTVIEW pNMLV = reinterpret_cast<LPNMLISTVIEW>(pNMHDR);
 	// TODO:  在此添加控件通知处理程序代码
-	NM_LISTVIEW* pNMListView = (NM_LISTVIEW*)pNMHDR;
+	/*NM_LISTVIEW* pNMListView = (NM_LISTVIEW*)pNMHDR;
 	int nItem = pNMListView->iItem;
 	if (nItem >= 0 && nItem < m_userlist.GetItemCount())
 	{
@@ -520,7 +526,7 @@ void CSharedWorld11Dlg::OnLvnItemchangedList1(NMHDR *pNMHDR, LRESULT *pResult)
 		{
 			itDlg->second->ShowWindow(SW_SHOW);
 		}
-	}
+	}*/
 	*pResult = 0;
 }
 
@@ -558,6 +564,7 @@ void CSharedWorld11Dlg::OnCheckResource()
 	{
 		username = m_userlist.GetItemText(m_currentItem, 0);
 		map<CString, CChatDlg*>::iterator itDlg;
+		
 		if ((itDlg = chatDlgs.find(username)) == chatDlgs.end())
 		{
 			chatDlg = new CChatDlg();

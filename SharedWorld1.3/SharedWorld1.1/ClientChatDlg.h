@@ -29,7 +29,12 @@ private:
 	CString m_peerName;
 	CString m_chatContent;
 	CString m_userName;
+	CMyButton m_min_btn;
+	CMyButton m_close_btn;
 public:
 	afx_msg void OnBnClickedButton2();
 	virtual BOOL OnInitDialog();
+	afx_msg void OnBnClickedButton4();
+	afx_msg void OnBnClickedButton3();
+	afx_msg LRESULT OnNcHitTest(CPoint point);
 };

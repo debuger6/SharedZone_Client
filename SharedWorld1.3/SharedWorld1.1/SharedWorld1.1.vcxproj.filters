@@ -147,6 +147,12 @@
     <ClInclude Include="ClientChatDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="XProgressCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsCoverDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SharedWorld1.1.cpp">
@@ -260,6 +266,12 @@
     <ClCompile Include="ClientChatDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="XProgressCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IsCoverDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SharedWorld1.1.rc">
@@ -268,6 +280,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\SharedWorld11.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\processb.bin">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

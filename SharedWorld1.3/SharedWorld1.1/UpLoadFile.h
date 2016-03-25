@@ -11,6 +11,9 @@ namespace CMD
 	public:
 		virtual void Execute(SharedSession& session);
 		void SendFile(const char* buf, uint16 len, SharedSession& session, FILE *fp, int32 flag);
+
+	private:
+		int file_size;
 	};
 }
 

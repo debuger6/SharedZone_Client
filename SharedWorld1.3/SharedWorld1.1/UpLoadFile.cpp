@@ -60,6 +60,12 @@ void UpLoadFile::Execute(SharedSession& session)
 	int32 flag = 0;
 
 	FILE *fp = fopen(session.GetAttribute("filename").c_str(), "rb");
+	CFileStatus fileStatus;
+	if (CFile::GetStatus(session.GetAttribute("filename").c_str(), fileStatus))
+	{
+		file_size = fileStatus.m_size;
+	}
+
 	if (NULL == fp)
 	{
 		AfxMessageBox("打开文件失败");

@@ -12,6 +12,8 @@
 #include "afxbutton.h"
 #include "MyButton.h"
 #include "ClientChatDlg.h"
+#include "XProgressCtrl.h"
+#include <boost/shared_ptr.hpp>
 #include <map>
 
 using namespace std;
@@ -50,7 +52,7 @@ private:
 	CListCtrl m_userlist;
 	ServerThread* st;
 	std::map<CString, CChatDlg*> chatDlgs;
-	std::map<CString, CClientChatDlg*> clientChatDlgs;
+	std::map<CString, boost::shared_ptr<CClientChatDlg>> clientChatDlgs;
 	std::vector<CString> files;
 	//CChatDlg chatDlg;
 	
@@ -79,6 +81,7 @@ private:
 	CImageList m_ImageList;
 
 	CString username;
+	CXProgressCtrl* xp;
 	int m_currentItem;
 
 private:
