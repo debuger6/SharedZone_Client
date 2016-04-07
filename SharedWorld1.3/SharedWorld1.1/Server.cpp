@@ -94,6 +94,11 @@ int Server::Start()
 
 			
 		}
+		else if (error_code == 1)
+		{
+			if (cmd == CMD_REGISTER)
+				::AfxMessageBox("该用户已存在");
+		}
 		else
 		{
 			throw exception("Server.cpp#62:出错");

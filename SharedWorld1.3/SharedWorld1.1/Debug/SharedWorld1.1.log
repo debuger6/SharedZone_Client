@@ -1,8 +1,9 @@
-﻿生成启动时间为 2016/3/25 11:08:25。
+﻿生成启动时间为 2016/4/7 14:06:49。
      1>项目“D:\workspace\SharedWorld1.3\SharedWorld1.1\SharedWorld1.1.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\c++\boost_1_60_0\boost_1_60_0 /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SharedWorld1.1.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DownLoadFile.cpp
-         DownLoadFile.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\c++\boost_1_60_0\boost_1_60_0 /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SharedWorld1.1.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt UpLoadFile.cpp
+         UpLoadFile.cpp
+     1>d:\workspace\sharedworld1.3\sharedworld1.1\uploadfile.cpp(66): warning C4244: “=”: 从“ULONGLONG”转换到“int”，可能丢失数据
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\workspace\SharedWorld1.3\Debug\SharedWorld1.1.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\c++\boost_1_60_0\boost_1_60_0\libs /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\workspace\SharedWorld1.3\Debug\SharedWorld1.1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\workspace\SharedWorld1.3\Debug\SharedWorld1.1.lib" /MACHINE:X86 Debug\SharedWorld1.1.res
          Debug\ChatDlg.obj
@@ -49,4 +50,4 @@
 
 生成成功。
 
-已用时间 00:00:01.15
+已用时间 00:00:03.50
